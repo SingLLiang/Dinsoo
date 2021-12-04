@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+/* 头部开始 */
+header .bg {
+  width: 1000px;
+  height: 16px;
+  background-color: #6db6ff;
+  position: fixed;
+}
+
+.narBar {
+  /* background: url('../images/logo.png') no-repeat 73px 34px; */
+  background-color: skyblue;
+  /* padding-left: 264px; */
+}
+
+.narBar > .logo {
+  float: left;
+  margin: 34px 72px 15px;
+}
+.narBar > ul > li {
+  float: left;
+  /* display: inline-block; */
+  /* width: 806px; */
+  /* width: 10px; */
+  /* height: 72px; */
+  /* line-height: 200px; */
+  margin-top: 72px;
+  /* text-align: center; */
+  margin-left: 18px;
+}
+.narBar ul li a {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'MicrosoftYaHei';
+  position: relative;
+}
+
+.narBar ul li:hover a::after {
+  content: '';
+  display: block;
+  width: 50%;
+  padding-top: 8px;
+  border-bottom: 1px solid;
+  /* border-image: linear-gradient(to right, #fff, #000, #fff 1 10);
+  background: transparent; */
+  position: absolute;
+  top: 18px;
+  left: 9px;
+}
+
+header > input {
+  float: right;
+  margin-right: 76px;
+  margin-top: 65px;
+  background: url('../images/放大镜.png') no-repeat 150px;
+  width: 182px;
+  height: 30px;
+}
+/* 头部结束 */
+
+/* 轮播图 */
+.banner p:nth-of-type(1) {
+  position: absolute;
+  top: 210px;
+  left: 264px;
+}
+
+.banner p:nth-of-type(2) {
+  position: absolute;
+  top: 253px;
+  left: 421px;
+}
+
+.banner p:nth-of-type(3) {
+  position: absolute;
+  top: 290px;
+  left: 587px;
+}
+
+.banner p {
+  color: #395571;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* 主体开始 */
+main .content {
+  height: 500px;
+  background-color: #fafafa;
+}
+
+main .about_us {
+  width: 145px;
+  margin: 0 auto 21px;
+  padding-top: 14px;
+}
+
+main .company_idea {
+  margin: 0 30px 0 50px;
+}
+
+main .company_idea .mission,
+.team,
+.vision {
+  display: inline-block;
+  width: 284px;
+  height: 320px;
+  margin-right: 20px;
+  background-color: #f2f2f2;
+}
+
+main .company_idea img {
+  margin: 18px auto 16px;
+}
+
+main .company_idea p:not(:last-of-type) {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .company_idea p:first-of-type {
+  letter-spacing: 3px;
+}
+
+main .company_idea p:last-of-type {
+  margin: 19px 8px;
+  color: #828282;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+main .case {
+  width: 145px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+main .intro_case {
+  width: 900px;
+  height: 600px;
+  margin: 22px 40px 22px 55px;
+}
+
+main .intro_case .case1 {
+  float: left;
+  text-align: center;
+  margin: 0 6px 22px 0;
+}
+
+main .intro_case .case1 p {
+  margin: 15px auto 19px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+main .intro_case .case1 button {
+  background-color: #6db6ff;
+  border: none;
+  color: #fff;
+  width: 135px;
+  height: 27px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+main .main_banner {
+  width: 900px;
+  height: 305px;
+  background: url('../images/bb.jpg') no-repeat;
+  margin: 45px auto 0;
+}
+
+main .main_banner .link {
+  width: 145px;
+  margin: 0 auto 43px;
+  padding-top: 33px;
+  color: #fff;
+}
+
+main .main_banner .photo {
+  padding: 0 7px 112px;
+}
+
+main .main_banner .photo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main .main_banner .photo .inner {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+main .main_banner .photo .inner img:nth-of-type(2) {
+  margin: 0 22px;
+}
+/* 主体结束 */
+
+/* 尾部 */
+footer > .bg2 {
+  margin-top: 53px;
+  border-top: 2px solid #6db6ff;
+  opacity: 0.5;
+}
+
+footer .content_footer {
+  height: 105px;
+  margin: 34px 51px 24px;
+  position: relative;
+}
+
+footer .content_footer .intro,
+.help,
+.win,
+.nav {
+  float: left;
+}
+
+footer .content_footer .intro p:first-of-type a,
+.help p:first-of-type a,
+.win p:first-of-type a,
+.nav p:first-of-type a {
+  display: inline-block;
+  margin-bottom: 26px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer .content_footer a {
+  color: #000;
+}
+
+footer .content_footer .help {
+  margin: 0 109px 0 55px;
+}
+
+footer .content_footer .nav {
+  margin: 0 80px 0 53px;
+}
+
+footer .content_footer .hotline {
+  margin-left: 20px;
+}
+
+footer .content_footer .hotline .phone {
+  float: left;
+  margin-top: 5px;
+}
+
+footer .content_footer .hotline p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer .content_footer .hotline p:first-of-type {
+  letter-spacing: 2px;
+}
+footer .content_footer .hotline p:nth-of-type(3) {
+  font-size: 20px;
+  transform: scale(0.5);
+  margin-left: 435px;
+  margin-top: -10px;
+  padding-right: 0;
+}
+footer .content_footer .hotline .qr_code p {
+  margin-top: -22px;
+  margin-left: 50px;
+  letter-spacing: 3px;
+  color: #444444;
+}
+
+footer .content_footer .hotline .qr_code {
+  float: left;
+}
+
+footer .content_footer .complain {
+  position: absolute;
+  right: -56px;
+  top: -10px;
+  /* background-color: pink; */
+}
+
+footer .content_footer .complain img {
+  display: inline-block;
+}
+
+footer .content_footer .complain .telephone {
+  font-size: 20px;
+  transform: scale(0.5);
+  margin-bottom: -5px;
+}
+footer .content_footer .complain a:first-of-type {
+  display: inline-block;
+  margin-left: 83px;
+  /* margin-left: auto;
+  margin-right: 0; */
+}
+
+footer .bg_footer {
+  background-color: #6db6ff;
+  height: 70px;
+  text-align: center;
+  line-height: 100px;
+}
